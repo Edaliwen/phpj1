@@ -17,6 +17,7 @@
     <main class="container">
         <h1>Php</h1>
         <h2>Les bases</h2>
+        <hr>
         <h3>La commande echo</h3>
         <p>La commande echo permet d'écrire du contenu dans la source html qui sera renvoyé au client</p>
         <!--pour ouvrir une zone de php dans le code on utilise <?php ?> ne pas oublier le ; à la fin -->
@@ -53,6 +54,41 @@
         <?php
             $string = "bonjour Amandine";
             echo ucfirst($string);
+        ?>
+        <hr>
+        <h3>La fonction strtolower()</h3>
+        <p>Cette fonction passe une chaîne de caractères en minuscules</p>
+        <?php
+            // utiliser & acute pour transformer le E en é
+            $message = 'IL A NEIG&Eacute; DIMANCHE.';
+            echo ucfirst(strtolower($message));
+        ?>
+        <hr>
+        <h3>La fonction strtoupper()</h3>
+        <p>Cette fonction passe une chaîne de caractères en majuscules</p>
+        <?php
+            // utiliser & acute pour transformer le E en é
+            $message = 'il fait beau.';
+            echo strtoupper($message);
+        ?>
+        <hr>
+        <h3>La fonction mb_convert_case()</h3>
+        <p>Cette fonction permet des manipulations comme ucfirst(), strtoupper() et strtolower() avec plus de fonctionnalités</p>
+        <p>mb_convert_case(chaine, traitement, "encodage")</p>
+        <ul>
+            <li>chaine : la chaine de caractères à traiter</li>
+            <li>traitement : une constante décrivant l'opération à effectuer (MB_CASE_UPPER, MB_CASE_LOWER, MB_CASE_TITLE). Le mode de traitment est en majuscules car il s'agit d'une constante, les bons usages en développement veulent que les constantes soient nommées en majuscules</li>
+            <li>encodage : l'encodage des caractères à utiliser, majoritairement en UTF-8</li>
+        </ul>
+        <?php
+            $chaine ="jean-pierre";
+            // le TITLE met en majuscules la première lettre de chaque mot
+            echo mb_convert_case($chaine, MB_CASE_TITLE, "UTF-8");
+            echo "<br>";
+            $chaine = "IL Y A DU VERGLAS";
+            echo mb_convert_case($chaine, MB_CASE_LOWER, "UTF-8");
+            echo "<br>";
+            echo mb_convert_case($chaine, MB_CASE_UPPER, "UTF-8");
         ?>
     </main>
     <footer>
