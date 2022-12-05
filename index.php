@@ -48,6 +48,12 @@
         ?>
         <hr>
         <h2>Manipulation de chaînes de caractères</h2>
+        <h3>La fonction native php ucfirst():string</h3>
+        <p>Retourne la chaîne string après avoir remplacé le premier caractère par sa majuscule.</p>
+        <?php
+            $string = "bonjour Amandine";
+            echo ucfirst($string);
+        ?>
     </main>
     <footer>
 
