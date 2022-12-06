@@ -297,7 +297,7 @@
                     }else{
                         echo "<p>C'est difficile !!</p>";
                     }
-
+                    
                     if($isEasy == 1){
                         echo "<p>Summertime<br>
                         And the livin' is easy<br>
@@ -315,12 +315,65 @@
                         case true:
                             echo "C'est facile !";
                             break;
-                        case false:
-                            echo "C'est difficile !";
-                            break;
-                        default:
-                            echo "Il s'est passé un truc pas normal là non ?";
+                            case false:
+                                echo "C'est difficile !";
+                                break;
+                                default:
+                                echo "Il s'est passé un truc pas normal là non ?";
+                            }
+                ?>
+        <hr>
+                <h3>Exercice 8</h3>
+                <p>Créer deux variables age et gender<br>
+                La variable gender peut prendre comme valeur :<br>
+                - Homme<br>
+                - Femme<br>
+                - Non-binaire<br>
+                En fonction de l'age et du genre afficher la phrase correspondante<br>
+                "Vous êtes un homme/une femme/non-binaire et vous êtes majeur/mineur."<br>
+                Gérer tous les cas.</p>
+                <?php
+                    $age = 12;
+                    $gender = "non";
+                    if($age >= 18){
+                        if($gender == "homme"){
+                            echo "Vous êtes un homme et vous êtes majeur.<br>";
+                        }else if($gender == "femme"){
+                            echo "Vous êtes une femme et vous êtes majeure.<br>";
+                        }else if($gender == "non-binaire"){
+                            echo "Vous êtes non-binaire et vous êtes majeur.<br>";
+                        }else{
+                            echo "Vous êtes la Danse Hongroise de Brahms en fa majeur !<br>";
+                        }
+                    }else{
+                        if($gender == "homme"){
+                            echo "Vous êtes un homme et vous êtes mineur.<br>";
+                        }else if($gender == "femme"){
+                            echo "Vous êtes une femme et vous êtes mineure.<br>";
+                        }else if($gender == "non-binaire"){
+                            echo "Vous êtes non-binaire et vous êtes mineur.<br>";
+                        }else{
+                            echo "Vous êtes le Requiem de Mozart et vous êtes en ré mineur.<br>";
+                        }
                     }
+                    switch($gender){
+                        case "homme":
+                            if($age >= 18){
+                                echo "Vous êtes un homme et vous êtes majeur.<br>";
+                            }else{
+                                echo "Vous êtes un homme et vous êtes mineur.<br>";
+                            }
+                        break;
+                        case "femme":
+                            if($age >= 18){
+                                echo "Vous êtes une femme et vous êtes majeure.<br>";
+                            }else{
+                                echo "Vous êtes une femme et vous êtes mineure.<br>";
+                            }
+                        break;
+                        default:
+                        echo "Vous ne rentrez pas dans les cases :) <br>";
+                    }                 
                 ?>
     </main>
     <footer>
