@@ -133,7 +133,17 @@
         une de type boolean<br>
         - Les initialiser avec une valeur de votre choix<br>
         - Les afficher
-        <hr>
+        </p>
+        <?php
+        $str = "Coucou";
+        $nb = 3;
+        $pi = 3.141592653589793;
+        $bool = true;
+        echo 'Affichage de la variable $str de type string : '. $str . '<br>';
+        echo 'Affichage de la variable $nb de type int : '. $nb . '<br>';
+        echo 'Affichage de la variable $pi de type float : '. $pi . '<br>';
+        echo 'Affichage de la variable $bool de type boolean : ' . $bool . '<br>';
+        ?>
     </main>
     <footer>
 
