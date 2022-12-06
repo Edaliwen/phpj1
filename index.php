@@ -18,7 +18,7 @@
         <h1>Php</h1>
         <hr>
             <h2>Les bases</h2>
-            <hr>
+        <hr>
                 <h3>La commande echo</h3>
                 <p>La commande echo permet d'écrire du contenu dans la source html qui sera renvoyé au client</p>
                 <!--pour ouvrir une zone de php dans le code on utilise <?php ?> ne pas oublier le ; à la fin -->
@@ -108,7 +108,27 @@
                 echo "Le résultat est $resultat.<br>";
                 // la fonction var_dump() permet de récupérer la valeur d'une variable
                 var_dump($resultat);
-            ?>
+                ?>
+        <hr>
+            <h2>Les conditions</h2>
+        <hr>
+                <h3>Condition if</h3>
+                <p>Vérifie les valeurs avec les opérateurs</p>
+                <ul>
+                    <li>> si la valeur est supérieure à une autre, ou >= pour supérieure ou égale</li>
+                    <li>< si la valeur est inférieure à une autre, ou <= pour inférieure ou égale</li>
+                    <li>== l'égalité de valeur non stricte (affranchie du typage)</li>
+                    <li>=== l'égalité de valeur stricte (valeur et type, exemple : 1 n'est pas un "1")</li>
+                    <li>!== et != l'inégalité de (stricte et non stricte)</li>
+                    <li>&& les conditions à droite et à gauche du && doivent êtres remplies</li>
+                    <li>|| au moins une des conditions à droite ou à gauche du || doit être remplie</li>
+                </ul>
+                <p>En php il y a deux façons d'écrire la condition if :<br>
+                - if(conditions){~}<br>
+                - if(conditions):
+                    ~
+                    endif;
+                </p>
         <hr>
             <h2>Exercices</h2>
         <hr>
