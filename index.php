@@ -90,6 +90,22 @@
             echo "<br>";
             echo mb_convert_case($chaine, MB_CASE_UPPER, "UTF-8");
         ?>
+        <hr>
+        <h3>La fonction substr()</h3>
+        <p></p>
+        <hr>
+        <h2>Exercices</h2>
+        <h3>Créer 3 variables lastName, firstName et age et les initialiser avec les valeurs de notre choix<br>
+            - Attention age est de type entier.<br>
+            - Afficher leur contenu.
+        </h3>
+        <?php 
+        $lastName = "Valtat";
+        $firstName = "Amandine";
+        $age = 39;
+        echo "Je m'appelle $firstName $lastName et j'ai $age ans !";
+        ?>
+
     </main>
     <footer>
 
