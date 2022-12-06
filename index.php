@@ -310,7 +310,17 @@
                     }else{
                         echo "<p>Vous n'aimez pas Gershwin ?</p>";
                     }
-                   
+                    $isEasy = false;
+                    switch($isEasy){
+                        case true:
+                            echo "C'est facile !";
+                            break;
+                        case false:
+                            echo "C'est difficile !";
+                            break;
+                        default:
+                            echo "Il s'est passé un truc pas normal là non ?";
+                    }
                 ?>
     </main>
     <footer>
