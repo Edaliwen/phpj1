@@ -185,9 +185,7 @@
                     $somme = 3 + 4;
                     $produit = 5 * 20;
                     $quotient = 45 / 5;
-                    var_dump($somme);
-                    var_dump($produit);
-                    var_dump($quotient);
+                    echo "Les résultats des opérations sont $somme, $produit et $quotient.";
                 ?>
     </main>
     <footer>
