@@ -124,11 +124,33 @@
                     <li>|| au moins une des conditions à droite ou à gauche du || doit être remplie</li>
                 </ul>
                 <p>En php il y a deux façons d'écrire la condition if :<br>
-                - if(conditions){~}<br>
-                - if(conditions):
-                    ~
+                - if(conditions){ <br>
+                    ~ <br>
+                }<br>
+                - if(conditions):<br>
+                    ~ <br>
                     endif;
                 </p>
+                <?php
+                    $score = 10;
+                    if($score > 0 && $score < 20){
+                        echo "<p>Les deux conditions sont remplies, le score est de $score.</p>";
+                    }
+
+                    $couleur = "bleu";
+                    if($couleur == "rouge" || $couleur == "vert" || $couleur == "bleu"){
+                        echo "<p>Une des conditions est remplie, la couleur est $couleur, on passe dans le if.</p>";
+                    }
+
+                    // autre exemple, ici avec c1 qui est un char et c2 qui est un int
+                    $c1 = "1";
+                    $c2 = 1;
+                    if($c1 === $c2){
+                        echo "<p>c1 et c2 sont strictement égaux.</p>";
+                    }else{
+                        echo "<p>c1 et c2 ne sont pas strictement égaux.</p>";
+                    }
+                ?>
         <hr>
             <h2>Exercices</h2>
         <hr>
