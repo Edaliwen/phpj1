@@ -152,6 +152,47 @@
                     }
                 ?>
         <hr>
+                <h3>Conditions empty() et isset() (empty -> vide, isset -> défini)</h3>
+                <p>Les conditions empty() et isset() permettent de vérifier si une variable existe (isset) et si elle contient une valeur ou non (empty).</p>
+                <?php
+                    if(isset($score2)){
+                        if($score2 == 10){
+                            echo "<p>Encore une vistoire de canard ! Avec un score de $score2 !</p>";
+                        }else{
+                            echo "<p>Et le score est de $score2</p>";
+                        }
+                    }
+                    $score2;
+                    if(empty($score2)){
+                        echo '<p>On ne connaît pas le score pour le moment. (La variable $score2 est vide)</p>';
+                    }else{
+                        echo '<p>On a un résultat, le score est de '. $score2 . ' ! (La variable $score2 n\'est pas vide)</p>';
+                    }
+                    
+                    ?>
+        <hr>
+                <h3>Condition switch</h3>
+                <p>La condition switch agit comme une succession de if(){~}elseif(){~} dans laquelle on vérifie des égalités.</p>
+                <?php
+                    $couleur = "orange";
+                    switch($couleur){
+                        case "bleu":
+                            echo "c'est bleu.";
+                            break;
+                        case "rose":
+                            echo "C'est rose.";
+                            break;
+                        case "Papaye":
+                            echo "La papaye n'est pas une couleur :s ";
+                            break;
+                        case "orange":
+                            echo "La variable est une chaine de caractères de valeur orange.";
+                            break;
+                        default:
+                            echo "C'est perdu.";
+                    }
+                ?>
+        <hr>
             <h2>Exercices</h2>
         <hr>
                 <h3>Exercice 1</h3>
