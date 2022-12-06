@@ -144,6 +144,19 @@
         echo 'Affichage de la variable $pi de type float : '. $pi . '<br>';
         echo 'Affichage de la variable $bool de type boolean : ' . $bool . '<br>';
         ?>
+        <hr>
+        <h3>Exercice 4</h3>
+        <p>Créer 3 variables lastName, firstName et age<br>
+        - les initialiser avec les valeurs de notre choix<br>
+        - Attention age est de type int<br>
+        - Afficher "Bonjour " + lastName + firstName + ", tu as " + age + " ans.".
+        </p>
+        <?php 
+        $lastName = "Valtat";
+        $firstName = "Amandine";
+        $age = 39;
+        echo "Bonjour $lastName $firstName, tu as $age ans.";
+        ?>
     </main>
     <footer>
 
