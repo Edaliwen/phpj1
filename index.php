@@ -95,17 +95,45 @@
         <p></p>
         <hr>
         <h2>Exercices</h2>
-        <h3>Créer 3 variables lastName, firstName et age et les initialiser avec les valeurs de notre choix<br>
-            - Attention age est de type entier.<br>
-            - Afficher leur contenu.
-        </h3>
+        <hr>
+        <h3>Exercice 1</h3>
+        <p>Créer 3 variables lastName, firstName et age et les initialiser avec les valeurs de notre choix<br>
+        - Attention age est de type entier.<br>
+        - Afficher leur contenu.
+        </p>
         <?php 
         $lastName = "Valtat";
         $firstName = "Amandine";
         $age = 39;
         echo "Je m'appelle $firstName $lastName et j'ai $age ans !";
         ?>
-
+        <hr>
+        <h3>Exercice 2</h3>
+        <p>- Créer une variable km. <br>
+        - L'initialiser à 1<br>
+        - Afficher son contenu <br>
+        - Changer sa valeur à 3<br>
+        - Afficher son contenu <br>
+        - Changer sa valeur à 125<br>
+        - Afficher son contenu <br>
+    </p>
+    <?php 
+        $km = 1;
+        echo "$km km.<br>";
+        $km = 3;
+        echo "$km km.<br>";
+        $km = 125;
+        echo "$km km.<br>";
+        ?>
+        <hr>
+        <h3>Exercice 3</h3>
+        <p>- Créer une variable de stype string,<br>
+        une de type int,<br>
+        une de type float,<br>
+        une de type boolean<br>
+        - Les initialiser avec une valeur de votre choix<br>
+        - Les afficher
+        <hr>
     </main>
     <footer>
 
