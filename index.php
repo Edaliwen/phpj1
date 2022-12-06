@@ -105,7 +105,7 @@
                 $b = 6;
                 $resultat = $a + $b;
                 // le résultat est 11
-                echo "le résultat est $resultat.";
+                echo "Le résultat est $resultat.<br>";
                 // la fonction var_dump() permet de récupérer la valeur d'une variable
                 var_dump($resultat);
             ?>
@@ -172,6 +172,22 @@
                     $firstName = "Amandine";
                     $age = 39;
                     echo "Bonjour $lastName $firstName, tu as $age ans.";
+                ?>
+        <hr>
+                <h3>Exercice 5</h3>
+                <p>Créer 3 variables,<br>
+                - dans la première mettre le résultat de l'opération 3 + 4<br>
+                - dans la deuxième mettre le résultat de l'opération 5 * 20<br>
+                - dans la troisième mettre le résultat de l'opération 45 / 5<br>
+                Afficher le contenu des variables
+                </p>
+                <?php
+                    $somme = 3 + 4;
+                    $produit = 5 * 20;
+                    $quotient = 45 / 5;
+                    var_dump($somme);
+                    var_dump($produit);
+                    var_dump($quotient);
                 ?>
     </main>
     <footer>
