@@ -275,6 +275,43 @@
                 <p>Créer une variable age et l'initialiser avec une valeur.<br>
                 - Si l'âge est supérieur ou égal à 18, afficher "Vous êtes majeur."<br>
                 - Sinon, afficher "Vous êtes mineur".</p>
+                <?php
+                    $age = 18;
+                    if($age >= 18){
+                        echo "Vous êtes majeur.";
+                    }else{
+                        echo "Vous êtes mineur.";
+                    }
+                ?>
+    </main>
+        <hr>
+                <h3>Exercice 7</h3>
+                <p>Créer une variable isEasy de type boolean et l'initialiser avec une valeur.<br>
+                - Afficher "C'est facile !", si c'est vrai.<br>
+                - Sinon, afficher "C'est difficile !!".
+                Bonus : l'écrire au moins de deux manières différentes</p>
+                <?php
+                    $isEasy = 1;
+                    if($isEasy == true){
+                        echo "<p>C'est facile !</p>";
+                    }else{
+                        echo "<p>C'est difficile !!</p>";
+                    }
+
+                    if($isEasy == 1){
+                        echo "<p>Summertime<br>
+                        And the livin' is easy<br>
+                        Fish are jumpin'<br>
+                        And the cotton is high<br>
+                        Oh, your daddy's rich<br>
+                        And your ma is good-lookin'<br>
+                        So hush, little baby<br>
+                        Don't you cry</p>";
+                    }else{
+                        echo "<p>Vous n'aimez pas Gershwin ?</p>";
+                    }
+                   
+                ?>
     </main>
     <footer>
 
