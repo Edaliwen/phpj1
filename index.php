@@ -270,6 +270,11 @@
                     $quotient = 45 / 5;
                     echo "Les résultats des opérations sont $somme, $produit et $quotient.";
                 ?>
+        <hr>
+                <h3>Exercice 6</h3>
+                <p>Créer une variable age et l'initialiser avec une valeur.<br>
+                - Si l'âge est supérieur ou égal à 18, afficher "Vous êtes majeur."<br>
+                - Sinon, afficher "Vous êtes mineur".</p>
     </main>
     <footer>
 
