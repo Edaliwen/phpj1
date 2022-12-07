@@ -375,14 +375,23 @@ Gérer tous les cas.
             ?>
     <hr>
             <h3>Exercice 18</h3>
-            <p>Ajouter la ligne correspondant au département de la ville de Reims</p>
+            <p>Afficher les valeurs du tableau $months avec une boucle.</p>
             <?php
-                $hautsDeFrance += [
-                    "51" => "Marne"
-                ];
-                echo "<pre>";
-                print_r($hautsDeFrance);
-                echo "</pre>"; 
+                echo '<div class="row">';
+                for($i = 0; $i < count($months); $i++){
+                    echo '<div class="col">' . $months[$i] . '</div>';
+                }
+                echo '</div>';
+
+            ?>
+    <hr>
+            <h3>Exercice 19</h3>
+            <p>Afficher les valeurs du tableau $hautsDeFrance avec une boucle.</p>
+            <?php
+               
+                foreach($hautsDeFrance as $item){
+                    echo '<p>' . $item . '</p>';
+                }
             ?>
     </main>
     <footer>
