@@ -571,7 +571,7 @@ Gérer tous les cas.
                 ?>
         <hr>
                 <h3>Exercice 11</h3>
-                <p>Créer un tableau simple months et l'initialiser avec les valeurs suivantes:<br> de janvier à décembre</p>
+                <p>Créer un tableau simple months et l'initialiser avec les valeurs suivantes:<br> de janvier à décembre.</p>
                 <?php
                     $months = [
                         "janvier",
@@ -581,7 +581,7 @@ Gérer tous les cas.
                         "mai",
                         "juin",
                         "juillet",
-                        "août",
+                        "aout",
                         "septembre",
                         "octobre",
                         "novembre",
@@ -593,9 +593,37 @@ Gérer tous les cas.
                 ?>
         <hr>
                 <h3>Exercice 12</h3>
-                <p>Avec le tableau de l'exercice 11, afficher la valeur de la 3e ligne du tableau </p>
+                <p>Avec le tableau de l'exercice 11, afficher la valeur de la 3e ligne du tableau. </p>
                 <?php
                     echo $months[2];
+                ?>
+        <hr>
+                <h3>Exercice 13</h3>
+                <p>Afficher la valeur de l'index 5. </p>
+                <?php
+                    echo $months[5];
+                ?>
+        <hr>
+                <h3>Exercice 14</h3>
+                <p>Mettre l'accent sur le u de août</p>
+                <?php
+                    $months[7] = "août";
+                    echo $months[7];
+                ?>
+        <hr>
+                <h3>Exercice 15</h3>
+                <p>Créer un tableau associatif avec comme index le numéro du département des Hauts-de-France et en valeur leur nom </p>
+                <?php
+                    $hautsDeFrance = [
+                        "02" => "Aisne",
+                        "59" => "Nord",
+                        "60" => "Oise",
+                        "62" => "Pas-de-Calais",
+                        "80" => "Somme"
+                    ];
+                    echo "<pre>";
+                    print_r($hautsDeFrance);
+                    echo "</pre>"; 
                 ?>
     </main>
     <footer>
