@@ -207,42 +207,46 @@
         <hr>
                 <h3>Les types de déclaration</h3>
                 <p>En php ils sont déclarés comme ci-dessous</p>
-                <?php
-                    // tableau simple avec le mot array et des ()
-                    $array1 = array(1, 2, 3, 4);
-                    // tableau simple avec des []
-                    $array2 =["Voiture", "Moto","Avion"];
-                    // tableau associé
-                    $array3 = [
-                                "animal1" => "lapin",
-                                "animal2" => "cheval",
-                                "animal3" => "écureuil",
-                                "animal4" => "hibou"
-                    ];
-                    // tableau d'objets
-                        // à voir
-                    // Tableau multidirectionnel
-                        /* Le tableau à deux dimensions est un tableau qui contient un ou plusieurs tableaux en valeur, le tableau à 3 dimensions est un tableau qui contient un ou plusieurs tableaux en valeur qui contiennent eux-mêmes d'autres tableuax en valeur, etc.
-                        Les sous-tableaux vont pouvoir être des tableaux numérotés ou des tableaux associatifs ou un mélange des deux
-                        */
-                    $array4 = [
-                                "livre" => [
-                                    "poids" => 200,
-                                    "quantité" => 10,
-                                    "prix" => 15,
-                                ],
-                                "stickers" => [
-                                    "poids" => 10,
-                                    "quantité" => 100,
-                                    "prix" => 1.5,
-                                ]
+                    <h4>tableau simple avec le mot array et des ()</h4>
+                    <?php
+                        $array1 = array(1, 2, 3, 4);
+                        echo "<h4>tableau simple avec des []</>";
+                        $array2 =["Voiture", "Moto","Avion"];
+                        echo "<h4>tableau associé</4>";
+                        $array3 = [
+                                    "animal1" => "lapin",
+                                    "animal2" => "cheval",
+                                    "animal3" => "écureuil",
+                                    "animal4" => "hibou"
+                        ];
+                    ?>
+                        <h4>tableau d'objets</h4>
+                            <!-- à voir -->
+                        <h4>Tableau multidirectionnel</h4> 
+                            <p> Le tableau à deux dimensions est un tableau qui contient un ou plusieurs tableaux en valeur, le tableau à 3 dimensions est un tableau qui contient un ou plusieurs tableaux en valeur qui contiennent eux-mêmes d'autres tableuax en valeur, etc.<br>
+                            Les sous-tableaux vont pouvoir être des tableaux numérotés ou des tableaux associatifs ou un mélange des deux
+                            </p>
+                    <?php
+                        $array4 = [
+                                    "livres" => [
+                                        "poids" => 200,
+                                        "quantité" => 10,
+                                        "prix" => 15,
+                                    ],
+                                    "stickers" => [
+                                        "poids" => 10,
+                                        "quantité" => 100,
+                                        "prix" => 1.5,
+                                    ]
 
-                                ];
-                    echo "<pre>";
-                    var_dump(is_array($array4));
-                    print_r($array4);
-                    echo "</pre>";           
-                ?>
+                                    ];
+                        echo "<pre>";
+                        var_dump($array4);
+                        echo "</pre>";  
+                        echo '<p>Affichage du poids des livres<br>
+                        echo $array4["livres"]["poids"];</P>';
+                        echo $array4["livres"]["poids"];        
+                    ?>
         <hr>
                 <h3>Accéder aux données</h3>
                 <p>Tableau simple : $tableau[numéro de colonne(index, clé ou key)]</p>
@@ -255,7 +259,8 @@
                 <?php
                    echo $array3["animal4"]; // renvoie à la valeur "Moto"
                    echo "<br>";
-                   ?>
+                ?>
+
         <hr>
                 <h3>Fonctions des tableaux</h3>
                     <h4>count()</h4>
@@ -566,9 +571,25 @@ Gérer tous les cas.
                 ?>
         <hr>
                 <h3>Exercice 11</h3>
-                <p></p>
+                <p>Créer un tableau simple months et l'initialiser avec les valeurs suivantes:<br> de janvier à décembre</p>
                 <?php
-
+                    $months = [
+                        "janvier",
+                        "février",
+                        "mars",
+                        "avril",
+                        "mai",
+                        "juin",
+                        "juillet",
+                        "août",
+                        "septembre",
+                        "octobre",
+                        "novembre",
+                        "décembre"
+                    ];
+                    echo "<pre>";
+                    print_r($months);
+                    echo "</pre>";
                 ?>
         <hr>
                 <h3>Exercice 12</h3>
