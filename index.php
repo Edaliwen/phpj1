@@ -304,12 +304,23 @@
                     "lapin",
                     "cheval",
                     "souris",
-                    "chien"
+                    "chien",
+                    "ornithorynque"
                 ];
                 echo '<div class="row">';
                 while ($i < count($tab)){
                     echo '<div class ="col">' . $tab[$i] . '</div>';
                     $i ++;
+                }
+                echo '</div>';
+            ?>
+        <hr>
+                <h3>La boucle for</h3>
+                <p>Comme pour le js</p>
+            <?php
+            // la fonction sizeOf() est un alias de count()
+                for($i = 0; $i < sizeOf($tab); $i++){
+                    echo "<p>Pour i = $i, valeur = $tab[$i].</p>";
                 }
                 echo '</div>';
             ?>
