@@ -291,6 +291,28 @@
                         var_dump(array_key_exists("animal10", $array3));  // renvoie false
                         echo "<br>";
                     ?>
+        <hr>
+            <h2>Les boucles</h2>
+        <hr>
+            <p>Permettent de créer du code itératif</p>
+        <hr>
+                <h3>La boucle while</h3>
+                <p>Cette boucle est la plus utilisée dans le cadre d'une requête mySQL pour récupérer des données (serveur) en php procédural uniquement.</p>
+            <?php
+                $i = 0;
+                $tab = [
+                    "lapin",
+                    "cheval",
+                    "souris",
+                    "chien"
+                ];
+                echo '<div class="row">';
+                while ($i < count($tab)){
+                    echo '<div class ="col">' . $tab[$i] . '</div>';
+                    $i ++;
+                }
+                echo '</div>';
+            ?>
     </main>
     <footer>
 
