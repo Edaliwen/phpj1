@@ -393,6 +393,14 @@ Gérer tous les cas.
                     echo '<p>' . $item . '</p>';
                 }
             ?>
+    <hr>
+            <h3>Exercice 20</h3>
+            <p>Afficher les valeurs du tableau $hautsDeFrance ainsi que les clés associées.</p>
+            <?php
+              foreach($hautsDeFrance as $key => $value){
+                echo '<p>Le département ' . $value . ' a le numéro ' . $key . '.</p>';
+            }
+            ?>
     </main>
     <footer>
 
