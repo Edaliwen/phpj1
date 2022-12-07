@@ -50,6 +50,7 @@
                 ?>
         <hr>
             <h2>Manipulation de chaînes de caractères</h2>
+        <hr>
                 <h3>La fonction native php ucfirst():string</h3>
                 <p>Retourne la chaîne string après avoir remplacé le premier caractère par sa majuscule.</p>
                 <?php
@@ -96,6 +97,7 @@
                 <p></p>
         <hr>
             <h2>Les opérateurs</h2>
+        <hr>
             <?php
                 // https://www.php.net/manual/en/language.operators.precedence.php
                 // https://www.php.net/manual/en/language.operators.arithmetic.php
@@ -202,6 +204,7 @@
                 ?>
         <hr>
             <h2>Les tableaux</h2>
+        <hr>
                 <h3>Les types de déclaration</h3>
                 <p>En php ils sont déclarés comme ci-dessous</p>
                 <?php
@@ -216,7 +219,73 @@
                                 "animal3" => "écureuil",
                                 "animal4" => "hibou"
                     ];
+                    // tableau d'objets
+                        // à voir
+                    // Tableau multidirectionnel
+                        /* Le tableau à deux dimensions est un tableau qui contient un ou plusieurs tableaux en valeur, le tableau à 3 dimensions est un tableau qui contient un ou plusieurs tableaux en valeur qui contiennent eux-mêmes d'autres tableuax en valeur, etc.
+                        Les sous-tableaux vont pouvoir être des tableaux numérotés ou des tableaux associatifs ou un mélange des deux
+                        */
+                    $array4 = [
+                                "livre" => [
+                                    "poids" => 200,
+                                    "quantité" => 10,
+                                    "prix" => 15,
+                                ],
+                                "stickers" => [
+                                    "poids" => 10,
+                                    "quantité" => 100,
+                                    "prix" => 1.5,
+                                ]
+
+                                ];
+                    echo "<pre>";
+                    var_dump(is_array($array4));
+                    print_r($array4);
+                    echo "</pre>";           
                 ?>
+        <hr>
+                <h3>Accéder aux données</h3>
+                <p>Tableau simple : $tableau[numéro de colonne(index, clé ou key)]</p>
+                <?php
+                   echo $array2[1]; // renvoie à la valeur "Moto"
+                   echo "<br>";
+                ?>
+
+                <p>Tableau associatif $tableau["nom de l'index"]</p>
+                <?php
+                   echo $array3["animal4"]; // renvoie à la valeur "Moto"
+                   echo "<br>";
+                   ?>
+        <hr>
+                <h3>Fonctions des tableaux</h3>
+                    <h4>count()</h4>
+                    <p>Renvoie la longueur, très utilisée dans les boucles</p>
+                    <?php
+                        echo 'La longueur du tableau $array2 ast de '. count($array2);
+                        echo "<br>";
+                        ?>
+        <hr>
+                    <h4>is_array()</h4>
+                    <p>Vérifie si une variable est bien un tableau</p>
+                    <?php
+                        $toto ="coucou";
+                        echo "<pre>";
+                        var_dump(is_array($toto));
+                        print_r($toto);
+                        echo "<br>";
+                        var_dump(is_array($array3));
+                        print_r($array3);
+                        echo "</pre>";
+                        ?>
+        <hr>
+                    <h4>array_key_exists()</h4>
+                    <p>Vérifie l'existence d'un nom de colonne dans un tableau associatif</p>
+                    <?php
+                        var_dump(array_key_exists("animal2", $array3)); // renvoie true
+                        echo "<br>";
+                        var_dump(array_key_exists("animal10", $array3));  // renvoie false
+                        echo "<br>";
+                    ?>
         <hr>
             <h2>Exercices</h2>
         <hr>
