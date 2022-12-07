@@ -193,6 +193,14 @@
                     }
                 ?>
         <hr>
+                <h3>Expression ternaire du if else</h3>
+                <p>Une expression ternaire est un raccourci pour exprimer une condition if else, elle utilise le ? et les : <br>
+                </p>
+                <?php
+                $x = 2;
+                echo ($x == 2) ? "x est égal à 2"  : "x est différent de 2";
+                ?>
+        <hr>
             <h2>Exercices</h2>
         <hr>
                 <h3>Exercice 1</h3>
@@ -333,7 +341,7 @@
                 Gérer tous les cas.</p>
                 <?php
                     $age = 18;
-                    $gender = "non";
+                    $gender = "femme";
                     if($age >= 18){
                         if($gender == "homme"){
                             echo "Vous êtes un homme et vous êtes majeur.<br>";
@@ -429,6 +437,58 @@ Gérer tous les cas.
                         default: 
                             echo "<p>Changez d'échelle, ou prenez un escabeau !</p><br>";
                         endswitch;
+                ?>
+        <hr>
+                <h3>Exercice 10</h3>
+                <p>Traduire ces codes avec des if else</p>
+                <?php
+                    $gender = "femme";
+                    $age = 17;
+                    $isOk = false;
+
+                    echo ($gender != "homme") ? "C'est une développeuse.<br>" : "C'est un développeur.<br>";
+
+                    if ($gender != "homme"){
+                        echo "C'est une développeuse.<br>";
+                    }else{
+                        echo "C'est un développeur.<br>";
+                    }
+
+                    echo ($age >= 18) ? "Tu es majeur.<br>" : "Tu es mineur.<br>";
+
+                    if ($age >= 18){
+                        echo "Tu es majeur.<br>";
+                    }else{
+                        echo "Tu es mineur.<br>";
+                    }
+
+                    echo ($isOk == false) ? "C'est pas bon.<br>" : "C'est ok.<br>";
+                    
+                    if ($isOk == false){
+                        echo "C'est pas bon.<br>";
+                    }else{
+                        echo "C'est ok.<br>";
+                    }
+                    
+                    echo ($isOk) ? "C'est ok !!<br>" : "C'est pas bon !!<br>";
+                    
+                    if ($isOk){
+                        echo "C'est ok !!<br>";
+                    }else{
+                        echo "C'est pas bon !!<br>";
+                    }
+                ?>
+        <hr>
+                <h3>Exercice 11</h3>
+                <p></p>
+                <?php
+
+                ?>
+        <hr>
+                <h3>Exercice 12</h3>
+                <p></p>
+                <?php
+
                 ?>
     </main>
     <footer>
