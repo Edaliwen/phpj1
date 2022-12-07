@@ -593,9 +593,9 @@ Gérer tous les cas.
                 ?>
         <hr>
                 <h3>Exercice 12</h3>
-                <p></p>
+                <p>Avec le tableau de l'exercice 11, afficher la valeur de la 3e ligne du tableau </p>
                 <?php
-
+                    echo $months[2];
                 ?>
     </main>
     <footer>
