@@ -298,32 +298,45 @@
         <hr>
                 <h3>La boucle while</h3>
                 <p>Cette boucle est la plus utilisée dans le cadre d'une requête mySQL pour récupérer des données (serveur) en php procédural uniquement.</p>
-            <?php
-                $i = 0;
-                $tab = [
-                    "lapin",
-                    "cheval",
-                    "souris",
-                    "chien",
-                    "ornithorynque"
-                ];
-                echo '<div class="row">';
-                while ($i < count($tab)){
-                    echo '<div class ="col">' . $tab[$i] . '</div>';
-                    $i ++;
-                }
-                echo '</div>';
-            ?>
+                <?php
+                    $i = 0;
+                    $tab = [
+                        "lapin",
+                        "cheval",
+                        "souris",
+                        "chien",
+                        "ornithorynque"
+                    ];
+                    echo '<div class="row">';
+                    while ($i < count($tab)){
+                        echo '<div class ="col">' . $tab[$i] . '</div>';
+                        $i ++;
+                    }
+                    echo '</div>';
+                ?>
         <hr>
                 <h3>La boucle for</h3>
                 <p>Comme pour le js</p>
-            <?php
-            // la fonction sizeOf() est un alias de count()
-                for($i = 0; $i < sizeOf($tab); $i++){
-                    echo "<p>Pour i = $i, valeur = $tab[$i].</p>";
-                }
-                echo '</div>';
-            ?>
+                <?php
+                // la fonction sizeOf() est un alias de count()
+                    for($i = 0; $i < sizeOf($tab); $i++){
+                        echo "<p>Pour i = $i, valeur = $tab[$i].</p>";
+                    }
+                ?>
+        <hr>
+                <h3>La boucle foreach</h3>
+                <p>Très utilisée avec le PHP Orienté Objet, les tableaux associatifs et les tableaux d'objets</p>
+                <?php
+                    $tab1 = [
+                        "zéro" => "serpent",
+                        "1" => "araignée",
+                        "2" => "éléphant"
+                    ];
+                    // on passe en revue les éléments du tableau à travers la variable auto-déclarée $item
+                    foreach($tab1 as $item){
+                        echo '<p>L\'item a la valeur ' . $item . '.</p>';
+                    }
+                ?>
     </main>
     <footer>
 
