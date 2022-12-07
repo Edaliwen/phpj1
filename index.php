@@ -201,6 +201,23 @@
                 echo ($x == 2) ? "x est égal à 2"  : "x est différent de 2";
                 ?>
         <hr>
+            <h2>Les tableaux</h2>
+                <h3>Les types de déclaration</h3>
+                <p>En php ils sont déclarés comme ci-dessous</p>
+                <?php
+                    // tableau simple avec le mot array et des ()
+                    $array1 = array(1, 2, 3, 4);
+                    // tableau simple avec des []
+                    $array2 =["Voiture", "Moto","Avion"];
+                    // tableau associé
+                    $array3 = [
+                                "animal1" => "lapin",
+                                "animal2" => "cheval",
+                                "animal3" => "écureuil",
+                                "animal4" => "hibou"
+                    ];
+                ?>
+        <hr>
             <h2>Exercices</h2>
         <hr>
                 <h3>Exercice 1</h3>
