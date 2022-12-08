@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css de Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- notre css -->
-    <link rel="stylesheet" href="assets/css/styleFront.css">
-    <title>PHP Exercices</title>
-</head>
-<body>
-    <header class="container-fluid bg-info text-light py-2">
-        PHP : Exercices
-    </header>
-    <main class="container">
-    
         <h1>Exercices</h1>
     <hr>
             <h3>Exercice 1</h3>
@@ -401,12 +383,3 @@ Gérer tous les cas.
                 echo '<p>Le département ' . $value . ' a le numéro ' . $key . '.</p>';
             }
             ?>
-    </main>
-    <footer>
-
-    </footer>
-    <!-- js Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-</body>
-</html>
