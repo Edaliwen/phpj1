@@ -16,7 +16,6 @@
             include("cours.php");
         ?>
 <hr>
-<hr>
         <?php
             // on appelle le fichier exercices.php
             include("exercices.php");
