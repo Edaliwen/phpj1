@@ -338,6 +338,15 @@
                     }
                 ?>
         <hr>
+            <h2>Diviser son code dans différents fichiers php</h2>
+        <hr>
+                <h3>Fonctions include(), require() et require_once()</h3>
+                <p>Ces fonctions vont permettre de rapatrier le code d'un fichier php dans un autre fichier php (principal)</p>
+                <p>La fonction require() est identique à include() sauf qu'elle gère les erreurs différement</p>
+                <p>Si une erreur se produit, la fonction include() génère un avertissement, mais le script continuera son exécution</p>
+                <p>Le require() génère une erreur fatale et le script s'arrête.</p>
+                <p>Le require_once() rapatrie une seule fois le fichier dans le script.</p>
+        <hr>
             <h2>Définir une constante</h2>
         <hr>
         <hr>
