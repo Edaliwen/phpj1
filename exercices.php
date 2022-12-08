@@ -383,3 +383,62 @@ Gérer tous les cas.
                 echo '<p>Le département ' . $value . ' a le numéro ' . $key . '.</p>';
             }
             ?>
+    <hr>
+            <h3>Exercice 21</h3>
+            <p>Créer une variable et l'initialiser à 0.<br>
+            L'afficher et l'incrémenter jusqu'à atteindre 10. </p>
+            <?php
+                $i = 0;
+                while($i <= 10){
+                    echo $i . '<br>';
+                    $i++;
+                }
+            ?>
+    <hr>
+            <h3>Exercice 22</h3>
+            <p>Créer deux variables<br> 
+            Initialiser la première à 0 et la deuxième avec un nombre compris entre 1 et 100.<br>
+            Tant que la première variable n'est pas supérieure à 20,<br>
+            multiplier la première variable avec la deuxième,<br>
+            afficher le résultat,<br>
+            incrémenter la première variable jusqu'à atteindre 20.</p>
+            <?php
+                $i = 0;
+                $nb = 3;
+                $produit;
+                while($i <= 20){
+                    $produit = $i * $nb;
+                    echo "$i * $nb = $produit<br>";
+                    $i += 3;
+                }
+                ?>
+    <hr>
+            <h3>Exercice 23</h3>
+            <p>Créer deux variables<br> 
+            Initialiser la première à 100 et la deuxième avec un nombre compris entre 1 et 100.<br>
+            Tant que la première variable n'est pas inférieure ou égale à 10,<br>
+            multiplier la première variable avec la deuxième,<br>
+            afficher le résultat,
+            décrémenter la première variable.</p>
+            <?php
+                $i = 100;
+                $nb = 3;
+                $produit;
+                while($i >= 10){
+                    $produit = $i * $nb;
+                    echo "$i * $nb = $produit<br>";
+                    $i -= 3;
+                }
+                ?>
+    <hr>
+            <h3>Exercice 24</h3>
+            <p>Créer une variable et l'initialiser à 1.<br>
+            Tant que cette variable n'atteint pas 10,<br>
+            l'afficher et l'incrémenter de la moitié de sa valeur. </p>
+            <?php
+                $i = 1;
+                while($i < 10){
+                    echo $i . '<br>';
+                    $i = $i + $i / 2;
+                }
+            ?>

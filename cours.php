@@ -374,6 +374,21 @@
                 // Vérification de $_GET
                 var_dump($_GET);
             ?>
+<hr>
+            <h3>la superGlobale $_POST</h3>
+            <p>$_POST va nous permettre de récupérer les informations d'un formulaire.<br>
+            Il faut définir le formulaire avec la méthode post (method="post")<br>
+            Sur chaque input du formulaire il faudra définir l'attribut "name" qui correspondra à une clé dans $_POST</p>   
+            <form action="index.php" class="form-group" method="post">
+                <label for="nom">Votre nom :</label>
+                <input type="text" class="form-control" name="nom" id="nom"> 
+                <button class="btn bg-primary text-dark fw-bold" type="submit" name="submit">Valider</button>
+            </form> 
+            <?php
+                echo '<pre>';
+                var_dump($_POST);
+                echo '</pre>';
+            ?>
     <?php
         include("assets/inc/footerFront.php");
     ?>
