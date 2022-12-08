@@ -337,6 +337,12 @@
                         echo '<p>L\'item a la valeur ' . $item . '.</p>';
                     }
                 ?>
+        <hr>
+            <h2>Définir une constante</h2>
+        <hr>
+        <hr>
+            <h2>Les variables superGlobales natives PHP</h2>
+        <hr>
     </main>
     <footer>
 
