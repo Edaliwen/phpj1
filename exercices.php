@@ -471,6 +471,10 @@ Gérer tous les cas.
             echo "$i On tient le bon bout<br>";
             $i += 15;
         }
+
+        for($i = 1; $i <= 100; $i += 15){
+            echo "$i On tient le bon bout<br>";
+        }
     ?>
 <hr>
     <h3>Exercice 28</h3>
@@ -480,5 +484,49 @@ Gérer tous les cas.
         while($i >= 0){
             echo "$i Enfin !!!!<br>";
             $i -= 15;
+        }
+    ?>
+<hr>
+    <h3>Exercice 29</h3>
+    <p>Faire une fonction qui retourne true et affiche le résultat</p>
+    <?php
+       echo retourTrue();
+
+       function retourTrue() : bool
+       {
+        $trueOrFalse = true;
+        return $trueOrFalse;
+       }
+    ?>
+<hr>
+    <h3>Exercice 30</h3>
+    <p>Faire une fonction qui prend en paramètre une chaine de caractères et un nombre et qui renvoie la concaténation des deux résultats.</p>
+    <?php
+       echo faimAQuelPoint("affamée", 157);
+       
+       function faimAQuelPoint(string $degreDeFaim, int $quantiteDeNourritureRequise)
+       {
+           return "Je suis $degreDeFaim, je mangerais bien $quantiteDeNourritureRequise pizzas !<br>";
+        }
+        ?>
+<hr>
+    <h3>Exercice 31</h3>
+    <p>Faire une fonction qui prend en paramètre deux nombres. <br>
+    La fonction doit retourner : <br>
+    - "le premier nombre est plus grand" si le premier nombre est plus grand que le deuxième <br>
+    - "le premier nombre est plus petit" si le premier nombre est plus petit que le deuxième <br>
+    - "les deux nombres sont identiques" si les deux nombres sont égaux</p>
+    <?php
+        comparerDeuxNombres(2, 157);
+
+        function comparerDeuxNombres(int $a, int $b)
+        {
+            if($a > $b){
+                echo "Le premier nombre est plus grand.<br>";
+            }else if($a < $b){
+                echo "Le premier nombre est plus petit.<br>";
+            }else{
+                echo "Les deux nombres sont identiques.<br>";
+            }
         }
     ?>

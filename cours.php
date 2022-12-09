@@ -329,6 +329,45 @@
         <p>Le require() génère une erreur fatale et le script s'arrête.</p>
         <p>Le require_once() rapatrie une seule fois le fichier dans le script.</p>
 <hr>
+    <h2>Les fonctions</h2>
+<hr>
+    <p>Les fonctions permettent d'encapsuler du code<br>
+    Elles permettent également d'éviter de répéter du code. <br>
+    Elles se notent de cette manière :</p>
+    <?php
+        // exécution de la fonction maFonction();
+        maFonction();
+        echo maFonctionReturnString();
+
+        // déclaration d'une fonction simple sans paramètres
+        function maFonction() : void
+        {
+            echo "cette fonction est vide comme mon estomac :'( <br>";
+            // ce que fait la fonction
+            // pas de return
+        }
+
+        // déclaration d'une fonction simple sans paramètres avec l'instruction return
+        function maFonctionReturnString() : string
+        {
+            $faim = "J'ai vraiment faim !<br>";
+          
+            return $faim;
+        }
+
+        maFonctionAvecParams("Valtat", 39);
+        echo maFonctionAvecParamsEtReturn("Zelda", 7);
+
+        // déclaration d'une fonction avec paramètres avec ou sans return
+        function maFonctionAvecParams(string $name, int $age){
+            echo "Nom : $name<br>Age : $age<br>";
+        }
+
+        function maFonctionAvecParamsEtReturn(string $name, int $age){
+            return "$name a $age ans !<br>";
+        }
+    ?>
+<hr>
     <h2>Définir une constante</h2>
 <hr>
         <p>Une constante en php s'écrit toujours en majuscules</p>
@@ -337,7 +376,7 @@
             // déclaration de la constante ESSAIS
             define("ESSAIS", "Bonjour :)");
             // affichage
-            echo ESSAIS;
+            echo ESSAIS . "<br>";
             // déclaration d'une constante de type integer
             define("ERREUR_MAX", 14);
             echo ERREUR_MAX;
