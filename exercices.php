@@ -530,3 +530,117 @@ Gérer tous les cas.
             }
         }
     ?>
+<hr>
+    <h3>Exercice 32</h3>
+    <p>Faire une fonction qui prend trois paramètres: <br>
+    le nom, la fonction et l'âge.<br>
+    Elle doit renvoyer <br>
+    "Bonjour + prénom + nom + tu as + âge."</p>
+    <?php
+        identification("Amandine", "Valtat", 39);
+
+        function identification(string $firstName, string $lastName, int $age)
+        {
+                echo "Bonjour $firstName $lastName tu as $age ans.<br>";
+        }
+    ?>
+<hr>
+    <h3>Exercice 33</h3>
+    <p>Faire une fonction qui prend deux paramètres :<br>
+    **l'âge et le genre d'une personne**. <br>
+    Le genre peut être :<br>
+    - Homme<br>
+    - Femme<br>
+    La fonction doit renvoyer en fonction des paramètres :<br>
+    - **Vous êtes un homme et vous êtes majeur**<br>
+    - **Vous êtes un homme et vous êtes mineur**<br>
+    - **Vous êtes une femme et vous êtes majeur**<br>
+    - **Vous êtes une femme et vous êtes mineur**<br>
+    Gérer tous les cas.</p>
+    <?php
+        unPeuBinaireToutCa("homme", 39);
+
+        function unPeuBinaireToutCa(string $gender, int $age)
+        {
+            if($age >= 18){
+                if($gender == "homme"){
+                    echo "Vous êtes un homme et vous êtes majeur.<br>";
+                }else{
+                    echo "Vous êtes une femme et vous êtes majeure.<br>";
+                }
+            }else{
+                if($gender == "femme"){
+                    echo "Vous êtes une femme et vous êtes mineure.<br>";
+                }else{
+                    echo "Vous êtes un homme et vous êtes mineur.<br>";
+                }
+            }
+        }
+        echo unPeuBinaire("homme", 15);
+
+        function unPeuBinaire(string $gender, int $age)
+        {
+            if($gender == "homme"){
+                $votreGenre = "un homme";
+                if($age >= 18){
+                    $votreAge = "majeur";
+                }else{
+                    $votreAge = "mineur";
+                }
+            }else{
+               $votreGenre = "une femme";
+               if($age >= 18){
+                    $votreAge = "majeure";
+                }else{
+                    $votreAge = "mineure";
+                }
+            }
+            return "Vous êtes $votreGenre et vous êtes $votreAge.";
+        }
+    ?>
+<hr>
+    <h3>Exercice 34</h3>
+    <p>Faire une fonction qui prend en paramètre trois nombres et qui renvoit la somme de ces nombres.<br> 
+    Tous les paramètres doivent avoir une valeur par défaut.</p>
+    <?php
+    echo additionnerTroisNombres(98, 2, 47);
+
+    function additionnerTroisNombres($a = 1, $b = 2, $c = 3) : int
+        {
+            return $a + $b + $c;
+        }
+    ?>
+<hr>
+    <h3>Exercice 35</h3>
+    <p>Tester sur la page que tous les paramètres de l'URL existent et les afficher: "index.php?lastname=Nemare&firstname=Jean"<br> 
+    </p>
+    <?php
+        echo '<pre>';
+        var_dump($_SERVER);
+        echo '</pre>';
+        if($_SERVER["QUERY_STRING"] == "lastname=Nemare&firstname=Jean"){
+            echo "index.php?". $_SERVER["QUERY_STRING"];
+        }
+    ?>
+<hr>
+    <h3>Exercice 36</h3>
+    <p>Tester sur cette page que le paramètre **age** existe et si c'est le cas l'afficher sinon le signaler<br> 
+    </p>
+    <?php
+        if(isset($_GET["age"])){
+            echo "La clé age existe, sa valeur est " . htmlspecialchars($_GET["age"]);
+        }else{
+            echo "La clé n'existe pas";
+        }
+
+    ?>
+
+<hr>
+    <h3>Exercice</h3>
+    <p><br> 
+    </p>
+    <?php
+
+    ?>
+ 
+
