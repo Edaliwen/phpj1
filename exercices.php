@@ -612,8 +612,8 @@ Gérer tous les cas.
     ?>
 <hr>
     <h3>Exercice 35</h3>
-    <p>Tester sur la page que tous les paramètres de l'URL existent et les afficher: "index.php?lastname=Nemare&firstname=Jean"<br> 
-    </p>
+    <p>Tester sur la page que tous les paramètres de l'URL existent et les afficher:<br>
+    "index.php?lastname=Nemare&firstname=Jean"</p>
     <?php
         echo '<pre>';
         var_dump($_SERVER);
@@ -624,8 +624,7 @@ Gérer tous les cas.
     ?>
 <hr>
     <h3>Exercice 36</h3>
-    <p>Tester sur cette page que le paramètre **age** existe et si c'est le cas l'afficher sinon le signaler<br> 
-    </p>
+    <p>Tester sur cette page que le paramètre **age** existe et si c'est le cas l'afficher sinon le signaler.</p>
     <?php
         if(isset($_GET["age"])){
             echo "La clé age existe, sa valeur est " . htmlspecialchars($_GET["age"]);
@@ -636,11 +635,102 @@ Gérer tous les cas.
     ?>
 
 <hr>
+    <h3>Exercice 37</h3>
+    <p>Faire une page index.php. Tester sur cette page que tous les paramètres de cette URL existent  et les afficher:<br>
+    index.php?startDate=2/05/2016&endDate=27/11/2016 
+    </p>
+    <?php
+      if(isset($_GET["startDate"]) && isset($_GET["endDate"])){
+            echo "Les clés startDate et endDate existent, la valeur de startDate est " . htmlspecialchars($_GET["startDate"]) . " et la valeur de endDate est " . htmlspecialchars($_GET["endDate"]);
+        }else{
+            echo "Ces clés n'existent pas";
+        }
+    ?>
+<hr>
+    <h3>Exercice 38</h3>
+    <p>Faire une page index.php. Tester sur cette page que tous les paramètres de cette URL existent  et les afficher:<br>
+    index.php?language=PHP&server=LAMP</p>
+    <?php
+        if(isset($_GET["language"]) && isset($_GET["server"])){
+            echo "Les clés language et server existent, la valeur de language est " . htmlspecialchars($_GET["language"]) . " et la valeur de server est " . htmlspecialchars($_GET["server"]);
+        }else{
+            echo "Ces clés n'existent pas";
+        }
+    ?>
+<hr>
+    <h3>Exercice 39</h3>
+    <p>Faire une page index.php. Tester sur cette page que tous les paramètres de cette URL existent  et les afficher:<br>
+    index.php?week=12</p>
+    <?php
+        if(isset($_GET["week"])){
+            echo "La clé week existe, sa valeur est " . htmlspecialchars($_GET["week"]);
+        }else{
+            echo "Cette clé n'existe pas";
+        }
+    ?>
+<hr>
+    <h3>Exercice 40</h3>
+    <p>Faire une page index.php. Tester sur cette page que tous les paramètres de cette URL existent  et les afficher:<br> 
+    index.php?building=12&room=101</p>
+    <?php
+        if(isset($_GET["building"]) && isset($_GET["room"])){
+            echo "Les clés building et room existent, la valeur de building est " . htmlspecialchars($_GET["building"]) . " et la valeur de room est " . htmlspecialchars($_GET["room"]);
+        }else{
+            echo "Ces clés n'existent pas";
+        }
+    ?>
+<hr>
+    <h3>Exercice 41</h3>
+    <p>Créer un formulaire demandant le nom et le prénom. Ce formulaire doit rediriger vers la page user.php avec la méthode GET.<br>
+    Afficher dans la page user.php les données du formulaire transmis.</p>
+    
+    <a class="btn btn-outline-primary" href="./formulaireGet.php" role="button">Accéder au formulaire</a>
+ 
+<hr>
+    <h3>Exercice 42</h3>
+    <p>Créer un formulaire demandant le nom et le prénom. Ce formulaire doit rediriger vers la page user.php avec la méthode POST.
+    </p>
+    Afficher dans la page user.php les données du formulaire transmises.<br> 
+    <a class="btn btn-outline-primary" href="./formulairePost.php" role="button">Accéder au formulaire</a>
+ 
+<hr>
+    <h3>Exercice 43</h3>
+    <p>Créer un formulaire sur la page index.php avec :<br>
+    - Une liste déroulante pour la civilité (Mr ou Mme)<br>
+    - Un champ texte pour le nom<br>
+    - Un champ texte pour le prénom  <br><br>
+    Ce formulaire doit rediriger vers la page index.php. <br> 
+    Vous avez le choix de la méthode.</p>
+    <?php
+    include("indexForm.php");
+    ?>
+    <?php
+        if($_POST ==  NULL){
+            echo "";
+        }else{
+    ?>
+            <h3 class="mt-3">Bonjour  <?=$_POST["civilite"] . " " . $_POST["prenom"] . " " . $_POST["nom"] . "! Votre fichier " . $_FILES["fichier"]["name"] . " de type " . $_FILES["fichier"]["type"] . " est bien enregistré !" ?></h3> 
+    <?php
+        }
+    ?>
+    <?php
+        echo '<pre>';
+        var_dump($_GET, $_POST, $_FILES);
+        echo '</pre>';
+    ?>
+<hr>
+    <h3>Exercice 44</h3>
+    <p>Avec le formulaire de l'exercice 3, Si des données sont passées en POST ou en GET, le formulaire ne doit pas être affiché. Par contre les données transmises doivent l'être. Dans le cas contraire, c'est l'inverse. <br>
+    (résultat au dessus)</p>
+<hr>
+    <h3>Exercice</h3>
+    <p><br> 
+    </p>
+   
+<hr>
     <h3>Exercice</h3>
     <p><br> 
     </p>
     <?php
 
     ?>
- 
-
