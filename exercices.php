@@ -705,7 +705,7 @@ Gérer tous les cas.
     include("indexForm.php");
     ?>
     <?php
-        if($_POST ==  NULL){
+        if($_POST ==  NULL && $_FILES == NULL){
             echo "";
         }else{
     ?>
@@ -723,14 +723,46 @@ Gérer tous les cas.
     <p>Avec le formulaire de l'exercice 3, Si des données sont passées en POST ou en GET, le formulaire ne doit pas être affiché. Par contre les données transmises doivent l'être. Dans le cas contraire, c'est l'inverse. <br>
     (résultat au dessus)</p>
 <hr>
-    <h3>Exercice</h3>
+    <h3>Exercice 45</h3>
     <p><br> 
     </p>
    
+<hr>
+    <h3>Exercice 46</h3>
+    <p>Faire une page HTML permettant de donner à l'utilisateur :<br> 
+    - son User Agent<br> 
+    - son adresse ip<br> 
+    - le nom du serveur</p>
+    <a class="btn btn-outline-primary" href="./infosServer.php" role="button">Vos infos serveur</a>
+
+<hr>
+    <h3>Exercice 47</h3>
+    <p>Sur la page index, faire un liens vers une autre page. Passer d'une page à l'autre le contenu des variables lastname, firstname et age grâce aux sessions. Ces variables auront été définies directement dans le code.<br>  
+    Il faudra afficher le contenu de ces variables sur la deuxième page.</p>
+    <?php
+        if(isset($_POST["nom"]) && isset($_POST["prenom"])){
+            $_SESSION["lastname"] = $_POST["nom"];
+            $_SESSION["firstname"] = $_POST["prenom"];
+        }
+        $_SESSION["age"] = 39;
+        echo '<pre>';
+        var_dump($_SESSION);
+        echo '</pre>';
+        ?>
+    <a class="btn btn-outline-primary" href="./session.php" role="button">Vos infos session</a>
+<hr>
+    <h3>Exercice</h3>
+    <p>Faire un formulaire qui permet de récupérer le login et le mot de passe de l'utilisateur. A la validation du formulaire, stocker les informations dans un cookie.</p>
+    <?php
+        echo '<pre>';
+        var_dump($_COOKIE);
+        echo '</pre>';
+    ?>
+    <a class="btn btn-outline-primary" href="./createCookie.php" role="button">Tu veux un cookie ?</a>
 <hr>
     <h3>Exercice</h3>
     <p><br> 
     </p>
     <?php
 
-    ?>
+    ?>    

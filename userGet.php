@@ -1,7 +1,7 @@
 <?php
     include("assets/inc/headFront.php");
 ?>
-<title>Page user</title>
+<title>Page user : méthode GET</title>
 <?php
     include("assets/inc/headerFront.php");
 ?>
