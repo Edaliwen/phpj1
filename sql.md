@@ -28,4 +28,5 @@ Exemple : un site de location d'appartements
 - prévoir table appartement
 - prévoir table réservation
 - pour chaque table -> prévoir les champs
-  -les différentes liaisons entre les tables -> comment sont-elles en relation ?
+
+## Les différentes liaisons entre les tables -> comment sont-elles en relation ?
