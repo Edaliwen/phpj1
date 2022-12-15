@@ -706,7 +706,7 @@ Afficher dans la page user.php les données du formulaire transmises.<br>
     Vous avez le choix de la méthode.</p>
 <?php
     include("indexForm.php");
-    ?>
+?>
 <?php
     if ($_POST == NULL && $_FILES == NULL) {
         echo "";
@@ -760,13 +760,13 @@ Afficher dans la page user.php les données du formulaire transmises.<br>
 <hr>
 <h3>Exercice</h3>
 <p>Faire un formulaire qui permet de récupérer le login et le mot de passe de l'utilisateur. A la validation du
-    formulaire, stocker les informations dans un cookie.</p>
+formulaire, stocker les informations dans un cookie.</p>
+    <a class="btn btn-outline-primary" href="./formulaireCookie.php" role="button" type="submit">Tu veux un cookie ?</a>
 <?php
     echo '<pre>';
     var_dump($_COOKIE);
     echo '</pre>';
     ?>
-<a class="btn btn-outline-primary" href="./createCookie.php" role="button">Tu veux un cookie ?</a>
 <hr>
 <h3>Exercice</h3>
 <p><br>
